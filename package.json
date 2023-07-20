@@ -4,7 +4,7 @@
   "typeapp": "react",
   "main": "index.ts",
   "scripts": {
-    "build:lib": "tsc",
+    "build:lib": "npx webpack --mode=production",
     "test": "jest --coverage"
   },
   "dependencies": {
@@ -28,5 +28,14 @@
     "ts-jest": "^29.1.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
