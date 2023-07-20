@@ -1,0 +1,85 @@
+.select-container {
+  margin-bottom: 10px;
+}
+
+.select-container .select-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.select-container .select {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary-gray-3);
+  cursor: pointer;
+  padding: 5px 12px;
+  background-color: var(--color-primary-white);
+}
+
+.select-container .select .icon-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.select-container .select .icon-error {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+}
+
+.select-container .select.focused {
+  border: 2px solid var(--color-primary-institutional-blue);
+}
+
+.select-container .select.error {
+  border: 2px solid var(--color-secondary-base-red);
+}
+
+.select-container .selected-option {
+  padding: 8px;
+}
+
+.select-container .select-required {
+  color: var(--color-secondary-base-red);
+}
+
+.select-container .options-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: var(--color-primary-white);
+  border: 1px solid var(--color-primary-gray-3);
+  border-radius: 0 0 4px 4px;
+  margin-top: 5px;
+}
+
+.select-container .select .option {
+  padding: 8px;
+}
+
+.select-container .select .option:hover {
+  background-color: var(--color-primary-light-blue);
+}
+
+.select-container .error-message {
+  color: var(--color-secondary-base-red);
+  margin-top: 5px;
+  font-size: 12px;
+}
+.select-disabled {
+  background-color: var(--color-primary-gray-3) !important;
+  cursor: not-allowed;
+  color: var(--color-primary-gray-2);
+  cursor: inherit !important;
+}

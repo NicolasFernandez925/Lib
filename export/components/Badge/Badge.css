@@ -1,0 +1,23 @@
+.badge {
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: var(--color-primary-white);
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-success {
+  background: var(--color-state-base-green);
+}
+
+.badge-danger {
+  background: var(--color-secondary-institutional-red);
+}
+
+.badge-info {
+  background: var(--color-primary-dark-blue);
+}

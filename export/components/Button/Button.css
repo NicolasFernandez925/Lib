@@ -1,0 +1,95 @@
+.button {
+  border: none;
+  width: 140px;
+  padding: 11.5px 20px;
+  border-radius: 5px;
+  color: var(--color-primary-white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button.button-primary,
+.single-icon.single-icon-primary {
+  background-color: var(--color-primary-institutional-blue);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.button.button-primary:focus,
+.single-icon.single-icon-primary:focus {
+  border: 3px solid var(--color-primary-dark-blue);
+}
+
+.button.button-primary:hover,
+.single-icon.single-icon-primary:hover {
+  background-color: var(--color-primary-dark-blue);
+  color: var(--color-primary-white);
+}
+
+.button.button-primary:active,
+.single-icon.single-icon-primary:active {
+  background-color: var(--color-primary-dark-blue);
+  border: 3px solid var(--color-primary-institutional-blue);
+}
+
+.button.button-primary.disabled,
+.single-icon.single-icon-primary.disabled {
+  background: var(--color-primary-gray-3);
+  cursor: initial;
+}
+
+.button.button-primary.disabled:active,
+.single-icon.single-icon-primary.disabled:active {
+  border: none;
+}
+
+.button.button-secondary,
+.single-icon.single-icon-secondary {
+  border: 1px solid var(--color-primary-institutional-blue);
+  background-color: #fff;
+  color: var(--color-primary-institutional-blue);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button.button-secondary:focus,
+.single-icon.single-icon-secondary:focus {
+  border: 3px solid var(--color-primary-dark-blue);
+}
+
+.button.button-secondary:hover,
+.single-icon.single-icon-secondary:hover {
+  background-color: var(--color-primary-institutional-blue);
+  color: var(--color-primary-white);
+}
+
+.button.button-secondary:active,
+.single-icon.single-icon-secondary:active {
+  background-color: var(--color-primary-dark-blue);
+  border: 3px solid var(--color-primary-institutional-blue);
+}
+
+.button.button-secondary.disabled,
+.single-icon.single-icon-secondary.disabled {
+  border: 1px solid var(--color-primary-gray-3);
+  background-color: var(--color-primary-white);
+  color: var(--color-primary-gray-3);
+  cursor: initial;
+}
+
+.button .button-icon {
+  margin-right: 10px;
+}
+
+.single-icon {
+  border: none;
+  border-radius: 5px;
+  color: var(--color-primary-white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+}
